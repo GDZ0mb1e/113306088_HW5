@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f5f5f5;
+      min-height: 100vh;
+    }
+
+    .main-container {
+      display: grid;
+      grid-template-columns: 330px 540px;
+      max-width: 900px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .left-panel {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .left-panel img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .left-panel h1 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    .left-panel p {
+      line-height: 1.6;
+      margin-top: 10px;
+    }
+
+    .left-panel .contact {
+      margin-top: 20px;
+    }
+
+    .right-panel {
+      padding: 20px;
+      display: flex;
+		justify-content: space-around;
+    	flex-direction: column; /* 圖標和文字上下排列 */
+
+    }
+
+    .right-panel h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .right-panel .section {
+      margin-bottom: 20px;
+    }
+
+    .right-panel ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .right-panel ul li {
+      margin-bottom: 8px;
+    }
+
+    .right-panel ul li a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .right-panel ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .music-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+    .favorite-music {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* 如果超出寬度，換行 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 100%; /* 讓容器高度占滿父元素 */
+}
+
+    .music-item {
+  		display: flex;
+  		flex-direction: column; /* 圖標和文字上下排列 */
+  		align-items: center;
+  		text-align: center;
+	}
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-panel">
+      <img src="123.jpg" alt="Profile Picture">
+      <h1>Sean</h1>
+      <p>I am a freshman in the Department of Management Information Systems at National Chengchi University. I am very interested in programming, but I always gets very lazy and do nothing. I have experience in writing Java, HTML, C++, but I only remember java. I literally forgot all of it.</p>
+      <div class="contact">
+        <h3>CONTACT</h3>
+        <p>youremail@media.com</p>
+        <img src="logo_nccu.png">
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="section">
+        <h2>Education</h2>
+        <ul>
+          <li>2024 - National Chengchi University, Department of MIS</li>
+          <li>2021 - Super idol of Myself</li>
+          <li>2018 - Lengendary Kid</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>Homework List</h2>
+        <ul>
+          <li>HW1 -  <a href="https://github.com/GDZ0mb1e/HW1.git" target="_blank">https://github.com/GDZ0mb1e/HW1.git</a></li>
+          <li>HW2 -  <a href="https://github.com/GDZ0mb1e/HW2.git" target="_blank">https://github.com/GDZ0mb1e/HW2.git</a></li>
+          <li>HW3 -  <a href="https://github.com/GDZ0mb1e/HW3.git" target="_blank">https://github.com/GDZ0mb1e/HW3.git</a></li>
+        </ul>
+      </div>
+      <div class="section">
+  <h2>Favorite Music</h2>
+  <div class="favorite-music">
+    <div class="music-item">
+      <a href = "https://www.youtube.com/watch?v=_o0oeyCtoFA&list=PLXTE5dNAKMkX8IhT-U1_ZtY3bYdTJp8uR&index=7&ab_channel=%E6%BB%BE%E7%9F%B3%E5%94%B1%E7%89%87ROCKRECORDS"><img src="spotify.png"></a>
+      <p>知足</p>
+    </div>
+    <div class="music-item">
+      <a href = "https://www.youtube.com/watch?v=fRQtDjiRtI8&ab_channel=SonyMusic%28Japan%29"><img src="spotify.png"></a>
+      <p>Secret base</p>
+    </div>
+    <div class="music-item">
+      <a href = "https://www.youtube.com/watch?v=kQYLHjgUh_g&ab_channel=YohKamiyama"><img src="spotify.png"></a>
+      <p>色香水</p>
+    </div>
+    <div class="music-item">
+      <a href = "https://www.youtube.com/watch?v=wrpRv1pyV6I&list=PLXTE5dNAKMkX8IhT-U1_ZtY3bYdTJp8uR&index=9&ab_channel=Kiranime"><img src="spotify.png"></a>
+      <p>There is a reason</p>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</body>
+</html>
